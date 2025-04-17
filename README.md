@@ -1,16 +1,50 @@
-# e_commerce_ui
+# 🛍️ E-Commerce UI – Flutter Şablonu
 
-A new Flutter project.
+Modern ve modüler yapısıyla, Flutter kullanarak geliştirilmiş şık bir e‑ticaret kullanıcı arayüzü şablonu.
 
-## Getting Started
+## 📸 Ekran Görüntüleri
 
-This project is a starting point for a Flutter application.
+### 🏠 Ana Sayfa
+![Ana Sayfa](assets/view/pic1.jpg)
 
-A few resources to get you started if this is your first Flutter project:
+### 📄 Ürün Detay
+![Ürün Detay](assets/view/pic2.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Özellikler
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Kategori Filtreleme**  
+  Yatay kaydırılabilen kategori sekmesi (“Hand Bag”, “Jewellery” vb.)  
+- **Ürün Kartları**  
+  Görsel, isim ve fiyat; Hero animasyonuyla detay sayfasına geçiş  
+- **Detay Ekranı**  
+  • Renk ve beden seçimi  
+  • Açıklama metni  
+  • Adet sayacı ve favori butonu  
+  • “Sepete Ekle” butonu  
+- **Responsive Tasarım**  
+  Ekran boyutuna göre dinamik konumlandırma  
+- **Modüler Bileşenler**  
+  Her UI parçası ayrı widget dosyasında  
+
+## 🗂 Proje Yapısı
+
+```text
+lib/
+├── constants.dart              # Renk, padding vb. sabitler
+├── main.dart                   # Uygulama başlangıcı, tema ve HomeScreen
+├── models/
+│   └── Product.dart            # Ürün modeli ve örnek liste
+├── screens/
+│   ├── home/
+│   │   ├── home_screen.dart    # Ana ürün grid’i
+│   │   └── components/
+│   │       ├── categories.dart # Kategori sekmesi
+│   │       └── item_card.dart  # Ürün kartı widget’ı
+│   └── details/
+│       ├── details_screen.dart # Seçilen ürün detay ekranı
+│       └── components/
+│           ├── color_and_size.dart
+│           ├── description.dart
+│           ├── counter_with_fav_btn.dart
+│           ├── add_to_cart.dart
+│           └── product_title_with_image.dart
