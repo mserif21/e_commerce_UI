@@ -4,11 +4,12 @@ Modern ve modüler yapısıyla, Flutter kullanarak geliştirilmiş şık bir e�
 
 ## 📸 Ekran Görüntüleri
 
-### 🏠 Ana Sayfa
-![Ana Sayfa](assets/view/pic1.jpg)
+<div style="display: flex; gap: 10px;">
+  <img src="assets/view/pic1.jpg" alt="Ana Sayfa" width="45%" />
+  <img src="assets/view/pic2.jpg" alt="Detay Sayfa" width="45%" />
+</div>
 
-### 📄 Ürün Detay
-![Ürün Detay](assets/view/pic2.jpg)
+
 
 ## 🚀 Özellikler
 
